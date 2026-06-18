@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1544 500" role="img" aria-label="AI Provider for Mistral — Mistral provider for the WordPress AI Client">
+  <title>AI Provider for Mistral</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#161922"/>
+      <stop offset="0.55" stop-color="#0B0D12"/>
+      <stop offset="1" stop-color="#06070A"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#23262F"/>
+      <stop offset="1" stop-color="#14161C"/>
+    </linearGradient>
+    <linearGradient id="mistral" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFAF00"/>
+      <stop offset="1" stop-color="#FF4D00"/>
+    </linearGradient>
+    <linearGradient id="signal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3DF5B6"/>
+      <stop offset="1" stop-color="#00B488"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#3DF5B6" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#3DF5B6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="0.2" cy="0.3" r="0.95">
+      <stop offset="0" stop-color="#FF7A00" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#FF7A00" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1544" height="500" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1544" height="500" fill="url(#glow)"/>
+
+  <!-- Faint connection trace running across the band -->
+  <g stroke="#2B7D63" stroke-width="3" fill="none" opacity="0.5" stroke-dasharray="2 14" stroke-linecap="round">
+    <path d="M360 250 H1500"/>
+  </g>
+
+  <!-- Provider-module mark (chip + Mistral mark + live node), sans badge -->
+  <g transform="translate(96,114) scale(1.05)">
+    <g fill="#2C313C">
+      <rect x="38" y="100" width="20" height="12" rx="3"/>
+      <rect x="38" y="144" width="20" height="12" rx="3"/>
+      <rect x="198" y="100" width="20" height="12" rx="3"/>
+      <rect x="198" y="144" width="20" height="12" rx="3"/>
+      <rect x="100" y="38" width="12" height="20" rx="3"/>
+      <rect x="144" y="38" width="12" height="20" rx="3"/>
+      <rect x="100" y="198" width="12" height="20" rx="3"/>
+      <rect x="144" y="198" width="12" height="20" rx="3"/>
+    </g>
+    <polygon points="206,128 167,195.5 89,195.5 50,128 89,60.5 167,60.5"
+             fill="url(#chip)" stroke="#3A404D" stroke-width="3"/>
+    <g transform="translate(80,80) scale(4)" fill="url(#mistral)" fill-rule="evenodd">
+      <path d="M3.428 3.4h3.429v3.428h3.429v3.429h-.002 3.431V6.828h3.427V3.4h3.43v13.714H24v3.429H13.714v-3.428h-3.428v-3.429h-3.43v3.428h3.43v3.429H0v-3.429h3.428V3.4zm10.286 13.715h3.428v-3.429h-3.427v3.429z"/>
+    </g>
+    <circle cx="167" cy="48" r="30" fill="url(#halo)"/>
+    <polygon points="167,26 173.5,41.5 189,48 173.5,54.5 167,70 160.5,54.5 145,48 160.5,41.5"
+             fill="url(#signal)"/>
+  </g>
+
+  <!-- Wordmark + tagline -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+    <text x="470" y="232" font-size="104" font-weight="800" fill="#FFFFFF" letter-spacing="-3">AI Provider for Mistral</text>
+    <rect x="474" y="262" width="128" height="7" rx="3.5" fill="url(#mistral)"/>
+    <text x="472" y="330" font-size="40" font-weight="500" fill="#CFD3DC">Plug Mistral into the WordPress AI Client</text>
+    <text x="472" y="386" font-size="30" font-weight="500" fill="#8F96A6">Text generation &#183; Pixtral vision &#183; function calling &#183; structured output</text>
+  </g>
+</svg>
