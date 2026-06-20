@@ -33,6 +33,17 @@ No, this plugin requires the PHP AI Client (and a consuming AI feature plugin) t
 
 Create an API key in the [Mistral console](https://console.mistral.ai/api-keys). The key is configured through the AI Client / Connectors interface, not in this plugin directly.
 
+== External services ==
+
+This plugin connects to the Mistral API to provide text generation with Mistral's models. It is required for the plugin's core purpose: it registers Mistral as a provider for the WordPress AI Client so that AI features can generate responses.
+
+The plugin sends a request to Mistral's API (https://api.mistral.ai/v1) each time a consuming AI feature generates content through the Mistral provider. Each request includes your Mistral API key (for authentication) and the input you submit for generation — such as the prompt text, any chat messages, and any image input you provide for vision-capable models. No request is sent unless an AI feature actively triggers a generation, and no data is sent until you have configured a Mistral API key. The plugin does not send any data on its own.
+
+This service is provided by Mistral AI. Please review their terms and privacy policy:
+
+* Terms of Service: https://legal.mistral.ai/terms
+* Privacy Policy: https://legal.mistral.ai/terms/privacy-policy
+
 == Changelog ==
 
 = 1.0.0 =
